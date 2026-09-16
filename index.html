@@ -21,15 +21,15 @@
     <meta property="og:url" content="https://deetechsinc.github.io/archetype-website/">
     <meta property="og:title" content="Archetype Insurance Agency Limited | Comprehensive Insurance Solutions">
     <meta property="og:description" content="Protecting what matters most. Tailored motor, commercial, life, and medical insurance solutions across Kenya. Reg No: PVT-5QVH3MA.">
-    <meta property="og:image" content="https://deetechsinc.github.io/archetype-website/watermark.png">
-    <meta property="og:image:secure_url" content="https://deetechsinc.github.io/archetype-website/watermark.png">
-    <meta property="og:image:type" content="image/png">
+    <meta property="og:image" content="https://deetechsinc.github.io/archetype-website/watermark.jpg">
+    <meta property="og:image:secure_url" content="https://deetechsinc.github.io/archetype-website/watermark.jpg">
+    <meta property="og:image:type" content="image/jpeg">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Archetype Insurance Agency Limited">
     <meta name="twitter:description" content="Protecting what matters most. Tailored motor, commercial, life, and medical insurance solutions across Kenya.">
-    <meta name="twitter:image" content="https://deetechsinc.github.io/archetype-website/watermark.png">
+    <meta name="twitter:image" content="https://deetechsinc.github.io/archetype-website/watermark.jpg">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -51,13 +51,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
-        /* Edge-to-Edge Watermark Background */
+        /* Edge-to-Edge Watermark Background - Full Viewport Cover */
         .watermark-bg {
-            background-image: url('watermark.png');
+            background-image: url('watermark.jpg');
             background-repeat: no-repeat;
             background-position: center center;
-            background-size: 100% 100%;
-            opacity: 0.15;
+            background-size: cover;
+            mix-blend-mode: screen;
+            opacity: 0.18;
         }
 
         /* Tech/Feature Marquee */
@@ -146,7 +147,7 @@
         <header class="fixed top-0 w-full bg-[#08140e]/80 backdrop-blur-md border-b border-white/10 z-50 shadow-xl">
             <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
                 <a href="#" class="flex items-center gap-3 hover:opacity-90 transition group">
-                    <img src="logo.png" alt="Archetype Insurance Logo" class="h-10 w-auto object-contain drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)] group-hover:scale-105 transition" onerror="this.src='https://ui-avatars.com/api/?name=Archetype+Insurance&background=1A4331&color=fff'">
+                    <img src="watermark.jpg" alt="Archetype Insurance Logo" class="h-10 w-auto object-contain drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)] group-hover:scale-105 transition">
                     <span class="text-xl font-bold tracking-tight text-white text-3d-subtle">Archetype <span class="text-emerald-400">Insurance</span></span>
                 </a>
                 
@@ -154,7 +155,6 @@
                     <a href="#about" class="text-white hover:text-emerald-400 transition text-3d-subtle">About Us</a>
                     <a href="#coverages" class="text-white hover:text-emerald-400 transition text-3d-subtle">Insurance Packages</a>
                     <a href="#credentials" class="text-white hover:text-emerald-400 transition text-3d-subtle">Compliance</a>
-                    <a href="#faq" class="text-white hover:text-emerald-400 transition text-3d-subtle">FAQ</a>
                     <a href="#contact" class="btn-3d-primary text-white font-semibold px-4 py-2 rounded-lg text-xs uppercase tracking-wider">Get a Quote</a>
                 </nav>
             </div>
